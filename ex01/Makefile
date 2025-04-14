@@ -1,5 +1,5 @@
 NAME = brain
-SRCS = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+SRCS = Zombie.cpp main.cpp zombieHorde.cpp
 OBJS	=	${SRCS:%.c=${OBJDIR}/%.o}
 CFLAGS = -Werror -Wextra -Wall -std=c++98
 CC = c++
