@@ -10,7 +10,7 @@ int main(void)
 	zombieTab = zombieHorde(N, "Pipou");
 	for (int i = 0; i < N; i++)
 	{
-		std::cout << "no " << i << std::endl;
+		std::cout << "No " << i << std::endl;
 		zombieTab[i].announce();
 		std::cout << std::endl;
 	}
