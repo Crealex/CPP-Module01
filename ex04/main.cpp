@@ -14,10 +14,16 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	src.open(argv[1]);
-	std::getline(src, buffer);
 	dest.open("dest.txt");
-	buffer = ft_replace(buffer, argv[2], argv[3]);
-	dest << buffer;
+	while (1)
+	{
+		std::getline(src, buffer);
+		if (buffer.empty())
+			break ;
+		buffer = ft_replace(buffer, argv[2], argv[3]);
+		dest << buffer;
+		dest << std::endl;
+	}
 	src.close();
 	dest.close();
 	return (0);

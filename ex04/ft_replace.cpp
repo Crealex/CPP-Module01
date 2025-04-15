@@ -9,7 +9,7 @@ std::string ft_replace(std::string buffer, char *str1, char *str2)
 
 	n = buffer.find(s1);
 	std::cout << "n : " << n << std::endl;
-	while (n > 0)
+	while (n >= 0)
 	{
 		buffer.erase(n, s1.length());
 		buffer.insert(n, s2);
