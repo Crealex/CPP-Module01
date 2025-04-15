@@ -4,7 +4,8 @@
 
 Zombie::Zombie()
 {
-
+	_name = "Jaquot le non defini";
+	std::cout << _name << GREEN << BOLD << " created !" << RESET << " (default)" << std::endl;
 }
 
 Zombie::Zombie(std::string name): _name(name)
@@ -20,4 +21,9 @@ Zombie::~Zombie()
 void Zombie::announce(void)
 {
 	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void Zombie::setName(std::string name)
+{
+	this->_name = name;
 }
