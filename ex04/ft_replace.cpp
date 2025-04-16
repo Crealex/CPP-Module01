@@ -8,7 +8,6 @@ std::string ft_replace(std::string buffer, char *str1, char *str2)
 	int n = 0;
 
 	n = buffer.find(s1);
-	std::cout << "n : " << n << std::endl;
 	while (n >= 0)
 	{
 		buffer.erase(n, s1.length());
